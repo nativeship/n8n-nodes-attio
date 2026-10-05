@@ -1,0 +1,66 @@
+{
+  "author": {
+    "email": "hello@nativeship.io",
+    "name": "nativeship",
+    "url": "https://github.com/nativeship"
+  },
+  "description": "Attio is a flexible CRM for managing customer records, deals, lists, and sales workflows.",
+  "devDependencies": {
+    "@n8n/node-cli": "0.41.2",
+    "@types/node": "22.15.29",
+    "eslint": "9.29.0",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": "\u003e=22.22.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/nativeship/n8n-nodes-attio",
+  "keywords": [
+    "n8n-community-node-package",
+    "nativeship",
+    "nativeship-nodes",
+    "n8n",
+    "attio",
+    "n8n-node",
+    "crm-automation",
+    "contact-management",
+    "sales-workflows",
+    "record-management"
+  ],
+  "license": "MIT",
+  "n8n": {
+    "credentials": [
+      "dist/credentials/AttioOAuth2Api.credentials.js"
+    ],
+    "n8nNodesApiVersion": 1,
+    "nodes": [
+      "dist/nodes/Attio/Attio.node.js"
+    ],
+    "strict": true
+  },
+  "name": "@nativeship/n8n-nodes-attio",
+  "nativeShip": {
+    "artifactSha256": "8b5e3c0fc3484a8133df5ae45164d1c9f22ad99a1a4eca48ae0fa23486980fe6"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nativeship/n8n-nodes-attio.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix"
+  },
+  "version": "1.0.0"
+}
